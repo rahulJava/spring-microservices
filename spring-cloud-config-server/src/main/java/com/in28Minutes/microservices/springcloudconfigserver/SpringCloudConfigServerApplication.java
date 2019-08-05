@@ -9,6 +9,7 @@ public class SpringCloudConfigServerApplication {
 
 	public static void main(String[] args) {
 		System.out.println("Inside main");
+		System.out.println("Inside line no 12");
 		SpringApplication.run(SpringCloudConfigServerApplication.class, args);
 	}
 
