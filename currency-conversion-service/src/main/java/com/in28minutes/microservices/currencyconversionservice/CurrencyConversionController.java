@@ -26,7 +26,7 @@ public class CurrencyConversionController {
 		CurrencyConversionBean responseBean = responseEntity.getBody();
 		System.out.println("Response Body12345:"+responseEntity.getBody());
 		return new CurrencyConversionBean(responseBean.getId(),from,to,
-				responseBean.getConversionMultiple(),quantity,quantity.multiply(responseBean.getConversionMultiple()),responseBean.getPort());
+				responseBean.getConversionMultiple(),quantity,quantity.multiply(responseBean.getConversionMultiple()),responseBean.getPortNo());
 		
 		
 	}
@@ -35,7 +35,7 @@ public class CurrencyConversionController {
 	{
 	CurrencyConversionBean responseBean = proxy.retrieveExchangeValue(from, to);
 		return new CurrencyConversionBean(responseBean.getId(),from,to,
-				responseBean.getConversionMultiple(),quantity,quantity.multiply(responseBean.getConversionMultiple()),responseBean.getPort());
+				responseBean.getConversionMultiple(),quantity,quantity.multiply(responseBean.getConversionMultiple()),responseBean.getPortNo	());
 		
 		
 	}
