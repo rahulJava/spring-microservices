@@ -21,7 +21,7 @@ public class CurrencyExchangeController {
 		//ExchangeValue exchangeValue = new ExchangeValue(1000L, from, to, BigDecimal.valueOf(65));
 		ExchangeValue exchangeValue = repository.findByFromAndTo(from, to);
 		ExchangeValue exchangeValue1 = repository.findByFrom(from);
-		return exchangeValue1;
+		return exchangeValue;
 		
 	}
 
