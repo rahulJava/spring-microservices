@@ -21,6 +21,8 @@ public class CurrencyExchangeController {
 		//ExchangeValue exchangeValue = new ExchangeValue(1000L, from, to, BigDecimal.valueOf(65));
 		ExchangeValue exchangeValue = repository.findByFromAndTo(from, to);
 		ExchangeValue exchangeValue1 = repository.findByFrom(from);
+		exchangeValue.setPortNo(
+				Integer.parseInt(environment.getProperty("local.server.port")));
 		return exchangeValue;
 		
 	}

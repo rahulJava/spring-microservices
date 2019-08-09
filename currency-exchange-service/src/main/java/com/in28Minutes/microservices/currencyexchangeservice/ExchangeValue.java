@@ -18,7 +18,7 @@ public class ExchangeValue
 	@Column(name="currency_to")
 	private String to;
 	private BigDecimal conversionMultiple;
-	@Column(name="port_no")
+	//@Column(name="port_no")
 	private int portNo;
 	public int getPortNo() {
 		return portNo;
